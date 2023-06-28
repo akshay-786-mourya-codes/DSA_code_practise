@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int A[]={1,2,3,4,5};
+    int index,i,length;
+    cin>>index;
+    length= sizeof(A)/sizeof(int);
+    for(i=index; i<length-1; i++){
+        A[i]=A[i+1];
+        
+    }
+    length--;
+    for(i=0; i<length;i++){
+        cout<<A[i];
+    }
+}
